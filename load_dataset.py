@@ -19,21 +19,9 @@ import librosa
 import csv
 import torch
 from torch.utils import data
-import subprocess
 
-# dataset_path = os.path.join(gdrive_root, 'dataset')
-# dataset_path = "/data01/AuFast/Pan_dataset/Exp3_SE/data"
-# dataset_path = "/home/pjh/dataset/T_dataset"
-# dataset_path = "/data01/AuFast/origin_dataset/dataset/LibriSpeech/test_dataset/SE"
-dataset_path = "/data01/AuFast/Pan_dataset/SE_asr/test1/se_dataset"
-# dataset_path = "/data01/AuFast/origin_dataset/dataset/LibriSpeech"
-# /data01/AuFast/origin_dataset/dataset/LibriSpeech/test-se-clean
-# dataset_path = "/data01/AuFast/Pan_dataset/Exp3_SE/data3/SNR-5"
-# dataset_path = "/data01/AuFast/Pan_dataset/Exp3_SE/data3/SNR0"
-# dataset_path = "/data01/AuFast/Pan_dataset/Exp3_SE/data3/SNR5"
-
-# dataset_path = "/home/pjh/dataset/SE_asr/test1/se_dataset"
-# dataset_path = "/data01/AuFast/Pan_dataset/Exp3_SE/T_dataset"
+# dataset_path = "/data01/AuFast/Pan_dataset/SE_asr/finaltest/wsj0"
+dataset_path = "/data01/AuFast/Pan_dataset/SE_asr/finaltest/libri"
 
 if not os.path.exists(dataset_path):
     os.makedirs(dataset_path)

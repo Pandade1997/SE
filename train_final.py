@@ -42,7 +42,7 @@ parser.add_argument('--attn_use', default=True, type=bool)
 parser.add_argument('--stacked_encoder', default=True, type=bool)
 parser.add_argument('--attn_len', default=5, type=int)
 parser.add_argument('--hidden_size', default=448, type=int)
-parser.add_argument('--ck_name', default='test2.pt')  # modify
+parser.add_argument('--ck_name', default='final.pt')  # modify
 args = parser.parse_args()
 
 n_fft, hop_length = 512, 128

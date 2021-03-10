@@ -14,7 +14,7 @@ from load_dataset import AudioDataset
 from models.attention import AttentionModel
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--batch_size', default=32, type=int, help='train batch size')
+parser.add_argument('--batch_size', default=2, type=int, help='train batch size')
 parser.add_argument('--num_epochs', default=100, type=int, help='train epochs number')
 parser.add_argument('--dropout_p', default=0.2, type=float, help='Attention model drop out rate')
 parser.add_argument('--learning_rate', default=5e-4, type=float, help='Learning rate')
@@ -23,10 +23,10 @@ parser.add_argument('--attn_len', default=5, type=int)
 parser.add_argument('--hidden_size', default=448, type=int)
 parser.add_argument('--ck_dir', default='ckpt_dir', help='ck path')
 parser.add_argument('--ck_name', help='ck file', default='test2.pt')
-parser.add_argument('--test_set', default='test')
+parser.add_argument('--test_set', default='train')
 parser.add_argument('--attn_use', default=True, type=bool)
 parser.add_argument('--out_path',
-                    default='/data01/AuFast/Pan_dataset/SE_asr/test2/se/gen_Libri/validexper_test_flac/testset_noisy/', type=str)
+                    default='/data01/AuFast/Pan_dataset/SE_asr/finaltest/gen_flac/libri_train/', type=str)
 
 args = parser.parse_args()
 
